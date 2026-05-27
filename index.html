@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Eid Ul Adha Mubarak | Premium Greeting Card</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Send a beautifully personalized, modern and aesthetic Eid Ul Adha (Bakrid) greeting to your friends and family. Created by Mohammad Eliyas Khan.">
+  <meta property="og:title" content="🌙 Eid Ul Adha Mubarak 🌙">
+  <meta property="og:description" content="May Allah bless you with happiness, peace, and prosperity on this sacred occasion. Create your personalized wish card now.">
+  <meta property="og:image" content="eid_luxury_bg.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Premium Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loading Animation / Preloader Screen -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <!-- Premium Glowing Crescent & Star Outline -->
+      <div class="preloader-moon-wrapper">
+        <svg class="preloader-moon" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" class="moon-bg-ring"></circle>
+          <path d="M50,10 A40,40 0 1,0 90,50 A30,30 0 1,1 50,10 Z" class="moon-path"></path>
+        </svg>
+        <svg class="preloader-star" viewBox="0 0 24 24">
+          <path d="M12,2 L15,9 L22,9 L17,14 L19,21 L12,17 L5,21 L7,14 L2,9 L9,9 Z" fill="#d4af37"></path>
+        </svg>
+      </div>
+      <div class="bismillah-calligraphy">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="preloader-sub">Preparing Your Spiritual Greeting...</div>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Music Source Fallback Node -->
+  <audio id="ambient-nasheed" loop preload="auto">
+    <!-- Beautiful licensing-free ambient background loop -->
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Desktop Backdrop Wrapper (Displays a phone frame on desktop) -->
+  <div class="app-wrapper">
+    
+    <!-- Mobile Device Container -->
+    <div class="mobile-container" id="main-app">
+      
+      <!-- Interactive Starfield Particle Layer -->
+      <canvas id="starfield"></canvas>
+      
+      <!-- Subtle Islamic Geometric Pattern Overlay -->
+      <div class="bg-geometric-pattern"></div>
+      
+      <!-- Dynamic Floating Lanterns Group -->
+      <div class="lantern-layer">
+        <div class="lantern float-l-1">
+          <svg viewBox="0 0 40 80">
+            <!-- Lantern cap & ring -->
+            <path d="M12 25 L20 15 L28 25 Z" fill="#aa7c11"></path>
+            <circle cx="20" cy="12" r="4" fill="none" stroke="#d4af37" stroke-width="2"></circle>
+            <!-- Lantern Body Glass -->
+            <path d="M10 25 L30 25 L34 55 L6 55 Z" fill="rgba(212, 175, 55, 0.2)" stroke="#d4af37" stroke-width="1.5"></path>
+            <!-- Hanging hook/line -->
+            <line x1="20" y1="0" x2="20" y2="10" stroke="#d4af37" stroke-width="1"></line>
+            <!-- Inner Glowing Flame -->
+            <circle cx="20" cy="40" r="8" fill="#ffdf7a" class="lantern-glow"></circle>
+            <!-- Lantern base -->
+            <rect x="12" y="55" width="16" height="5" fill="#aa7c11"></rect>
+            <!-- Tassel -->
+            <line x1="20" y1="60" x2="20" y2="75" stroke="#d4af37" stroke-width="1.5"></line>
+          </svg>
+        </div>
+        <div class="lantern float-l-2">
+          <svg viewBox="0 0 40 80">
+            <path d="M12 25 L20 15 L28 25 Z" fill="#aa7c11"></path>
+            <circle cx="20" cy="12" r="4" fill="none" stroke="#d4af37" stroke-width="2"></circle>
+            <path d="M10 25 L30 25 L34 55 L6 55 Z" fill="rgba(212, 175, 55, 0.25)" stroke="#d4af37" stroke-width="1.5"></path>
+            <line x1="20" y1="0" x2="20" y2="10" stroke="#d4af37" stroke-width="1"></line>
+            <circle cx="20" cy="40" r="10" fill="#ffdf7a" class="lantern-glow-alt"></circle>
+            <rect x="12" y="55" width="16" height="5" fill="#aa7c11"></rect>
+            <line x1="20" y1="60" x2="20" y2="72" stroke="#d4af37" stroke-width="1.5"></line>
+          </svg>
+        </div>
+        <div class="lantern float-r-1">
+          <svg viewBox="0 0 40 80">
+            <path d="M12 25 L20 15 L28 25 Z" fill="#aa7c11"></path>
+            <circle cx="20" cy="12" r="4" fill="none" stroke="#d4af37" stroke-width="2"></circle>
+            <path d="M10 25 L30 25 L34 55 L6 55 Z" fill="rgba(212, 175, 55, 0.15)" stroke="#d4af37" stroke-width="1.5"></path>
+            <line x1="20" y1="0" x2="20" y2="10" stroke="#d4af37" stroke-width="1"></line>
+            <circle cx="20" cy="40" r="7" fill="#ffdf7a" class="lantern-glow"></circle>
+            <rect x="12" y="55" width="16" height="5" fill="#aa7c11"></rect>
+            <line x1="20" y1="60" x2="20" y2="78" stroke="#d4af37" stroke-width="1.5"></line>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Top Controls Header -->
+      <header class="header-controls" style="justify-content: flex-end;">
+        <button id="music-toggle" aria-label="Toggle Nasheed Sound">
+          <div class="music-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="control-label">Nasheed</span>
+        </button>
+      </header>
+
+      <!-- Scrollable Main Viewport -->
+      <main class="scrollable-content">
+
+        <!-- 1. HERO SECTION -->
+        <section class="hero-section text-center">
+          
+          <!-- Outer Glowing Ring & Crescent Moon -->
+          <div class="moon-aura-container">
+            <div class="ambient-moon-glow"></div>
+            <div class="main-crescent-moon">
+              <svg viewBox="0 0 100 100">
+                <!-- Drop shadow filter -->
+                <defs>
+                  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+                    <feComposite in="SourceGraphic" in2="blur" operator="over"></feComposite>
+                  </filter>
+                </defs>
+                <path d="M30,20 A35,35 0 1,0 90,65 A28,28 0 1,1 30,20 Z" fill="url(#goldGradient)" filter="url(#glow)"></path>
+                
+                <!-- Gold Gradient definition -->
+                <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fff5d1"></stop>
+                  <stop offset="50%" stop-color="#d4af37"></stop>
+                  <stop offset="100%" stop-color="#aa7c11"></stop>
+                </linearGradient>
+              </svg>
+            </div>
+            
+            <!-- Twinkling Star Inside Moon -->
+            <div class="moon-inner-star">
+              <svg viewBox="0 0 24 24">
+                <path d="M12,2 L15,9 L22,9 L17,14 L19,21 L12,17 L5,21 L7,14 L2,9 L9,9 Z" fill="#ffdf7a"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Title Area -->
+          <div class="heading-container">
+            <h1 class="main-heading animate-fade-in">
+              <span class="moon-emoji">🌙</span>
+              <span class="heading-text">Eid Ul Adha</span>
+              <span class="sub-heading-text">Mubarak</span>
+              <span class="moon-emoji">🌙</span>
+            </h1>
+          </div>
+
+          <!-- Dynamic Personalized Box (Appears when card is customized) -->
+          <div id="personalized-box" class="personalized-card glass-panel hidden">
+            <div class="personalized-tag">Especially for you</div>
+            <h2 id="recipient-name-display" class="recipient-name">Dear Beloved</h2>
+            <p class="personalized-custom-msg" id="custom-message-display">Sending warm thoughts and prayers to light up your path on this blessed Eid.</p>
+            <div class="personalized-from-tag">With prayers & love from:</div>
+            <div id="sender-name-display" class="sender-name">Your Family</div>
+          </div>
+
+          <!-- Default Main Body Subheading -->
+          <div id="default-hero-body" class="hero-body-content">
+            <p class="subheading animate-fade-in-delayed">
+              “May Allah bless you with happiness, peace, prosperity, and countless blessings on this sacred occasion.”
+            </p>
+
+            <!-- Premium Illustration Background Card -->
+            <div class="greeting-showcase-card glass-panel animate-slide-up">
+              <div class="showcase-img-container">
+                <img src="eid_luxury_bg.png" alt="Luxurious Eid Greeting Art" class="showcase-image">
+                <div class="showcase-gradient-overlay"></div>
+              </div>
+              <div class="showcase-caption">
+                <h3 class="caption-title">Warm wishes to my dear friends and family</h3>
+                <div class="signature-line">
+                  <span class="sig-prefix">With sincere prayers,</span>
+                  <span class="sig-name" id="default-signature-name">— Mohammad Eliyas Khan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Typewriter Wishes Card -->
+          <div class="typewriter-wishes-wrapper glass-panel">
+            <div class="card-icon-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="wishes-typewriter-container">
+              <span id="wishes-typewriter"></span><span class="cursor">|</span>
+            </div>
+          </div>
+
+          <div class="scroll-prompt">
+            <span>Scroll to receive blessings</span>
+            <div class="scroll-arrow"></div>
+          </div>
+
+        </section>
+
+        <!-- 2. QUOTE SLIDER SECTION -->
+        <section class="section quote-section text-center">
+          <div class="section-title">
+            <span class="sec-subtitle">Inspiring Sentiments</span>
+            <h2 class="sec-title">Sacred Reflections</h2>
+          </div>
+
+          <!-- Glassmorphic Quote Card Frame -->
+          <div class="slider-outer-wrapper glass-panel">
+            <div class="slider-track" id="quote-slider">
+              <!-- Slide 1 -->
+              <div class="quote-slide active">
+                <p class="quote-text">“Their meat will not reach Allah, nor will their blood, but what reaches Him is piety from you. Thus have We subjected them to you that you may glorify Allah for that [to] which He has guided you...”</p>
+                <div class="quote-author">— Surah Al-Hajj [22:37]</div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="quote-slide">
+                <p class="quote-text">“Eid is a beautiful reminder of Ibrahim's (A.S.) unwavering faith and devotion. May our hearts reflect the same purity of sacrifice, belief, and reliance upon Allah's divine wisdom.”</p>
+                <div class="quote-author">— Festive Spirit</div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="quote-slide">
+                <p class="quote-text">“May the blessings of Allah shower upon your home, filling every corner with content, resolving every hardship with peace, and accepting every humble sacrifice made in His noble name.”</p>
+                <div class="quote-author">— Eternal Prayer</div>
+              </div>
+            </div>
+
+            <!-- Slide Navigation Buttons -->
+            <div class="slider-controls">
+              <button class="slider-btn prev-btn" id="prev-quote" aria-label="Previous Slide">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <div class="slider-dots" id="slider-dots-container">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+              </div>
+              <button class="slider-btn next-btn" id="next-quote" aria-label="Next Slide">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. ELEGANT DUA SECTION -->
+        <section class="section dua-section text-center">
+          <div class="section-title">
+            <span class="sec-subtitle">Daily Spiritual Supplication</span>
+            <h2 class="sec-title">A Blessed Dua</h2>
+          </div>
+
+          <!-- Premium Calligraphy-Framed Dua Card -->
+          <div class="dua-card-container glass-panel">
+            <div class="dua-decorative-border"></div>
+            
+            <div class="arabic-dua" dir="rtl">
+              رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ
+            </div>
+            
+            <div class="dua-transliteration">
+              "Rabbana taqabbal minna, innaka antas-Sami'ul-'Alim."
+            </div>
+            
+            <div class="dua-translation">
+              “Our Lord, accept [this] from us. Indeed, You are the Hearing, the Knowing.”
+            </div>
+            
+            <div class="dua-source">Quran — Surah Al-Baqarah [2:127]</div>
+            
+            <div class="dua-action-glow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
+                <path d="m9 10 3 3 3-3"></path>
+                <path d="M12 13V3"></path>
+              </svg>
+              <span>Swipe down or tap to make your heart glow</span>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="app-footer">
+          <div class="mosque-silhouette">
+            <!-- mosque vector outline silhouettes -->
+            <svg viewBox="0 0 300 80" class="mosque-svg">
+              <path d="M0,80 L300,80 L300,40 L285,40 L285,25 L280,25 L280,40 L260,40 L260,30 L255,10 L250,30 L250,40 L210,40 L210,15 L202,15 L202,5 L200,0 L198,5 L198,15 L190,15 L190,40 L160,40 L160,25 L155,5 L150,25 L150,40 L120,40 L120,30 L115,10 L110,30 L110,40 L80,40 L80,15 L72,15 L72,5 L70,0 L68,5 L68,15 L60,15 L60,40 L30,40 L30,25 L25,25 L25,40 L0,40 Z" fill="#03160a"></path>
+              <path d="M0,80 L300,80 L300,50 L275,50 L275,35 L270,15 L265,35 L265,50 L240,50 L240,25 L230,25 L230,50 L180,50 L180,30 L175,10 L170,30 L170,50 L140,50 L140,35 L135,15 L130,35 L130,50 L95,50 L95,25 L85,25 L85,50 L0,50 Z" fill="#010703" opacity="0.6"></path>
+            </svg>
+          </div>
+          <div class="footer-credits">
+            <p>May your hearts be filled with pure joy and peace.</p>
+            <div class="signature">Made with ❤️ by <span class="author-name">Mohammad Eliyas Khan</span></div>
+            <p class="copyright">&copy; 2026. All rights reserved.</p>
+          </div>
+        </footer>
+
+      </main>
+
+
+      <!-- Native CSS Toast Messages -->
+      <div id="toast-message" class="toast-notification hidden">
+        <span class="toast-icon">✨</span>
+        <span id="toast-text" class="toast-content">Copied!</span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
